@@ -1,0 +1,90 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMVeYpi+IF4RzwEnUNOR2yR",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/cbilinski101/Credit-Card-Fraud-Detection-/blob/main/requirements.txt\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "id": "gV1fcJHkWcdM"
+      },
+      "outputs": [],
+      "source": [
+        "!pip freeze > requirements.txt"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip freeze | grep -E 'pandas|numpy|scikit-learn|matplotlib|seaborn|joblib|geopy|psutil|pyspark' > requirements.txt"
+      ],
+      "metadata": {
+        "id": "nghrKLN7WfGh"
+      },
+      "execution_count": 2,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!cat requirements.txt"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "F2ayVwaUaU2G",
+        "outputId": "f64799bd-2f95-4078-e54c-ee91e76e722b"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "geopandas==1.0.1\n",
+            "geopy==2.4.1\n",
+            "joblib==1.4.2\n",
+            "matplotlib==3.10.0\n",
+            "matplotlib-inline==0.1.7\n",
+            "matplotlib-venn==1.1.2\n",
+            "numpy==1.26.4\n",
+            "pandas==2.2.2\n",
+            "pandas-datareader==0.10.0\n",
+            "pandas-gbq==0.28.0\n",
+            "pandas-stubs==2.2.2.240909\n",
+            "psutil==5.9.5\n",
+            "pyspark==3.5.5\n",
+            "scikit-learn==1.6.1\n",
+            "seaborn==0.13.2\n",
+            "sklearn-pandas==2.2.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
